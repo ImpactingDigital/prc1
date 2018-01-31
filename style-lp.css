@@ -207,7 +207,19 @@ footer.site-footer{
     right:-80px;
     top:220px;
     z-index: -1;
-    animation: bobble 4s infinite;  
+    animation: bobble 4s infinite;
+}
+.blue-certified{
+    background-image:url(assets/landingpages/images/3b/certified.png);
+    width:260px;
+    height:300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position:absolute;
+    right:-80px;
+    top:220px;
+    z-index: -1;
+    animation: bobble 4s infinite;
 }
 .thinking-euro{
     background-image:url(assets/landingpages/images/thinking-euro-sm.png);
@@ -334,6 +346,12 @@ footer.site-footer{
         right:-50px;
         top:0px;
     }
+     .blue-certified{
+        width:300px;
+        height:360px;
+        right:-50px;
+        top:0px;
+    }
     .mobile-phone-guy-image{
         background-image:url(assets/landingpages/images/3a2/mobile-phone-guy-lg.jpg);
         background-position: bottom right; 
@@ -446,6 +464,11 @@ footer.site-footer{
         background-position:top left;
     }  
     .fliying-blue-rocket{
+        width:500px;
+        height:600px;
+    }
+    }  
+    .blue-certified{
         width:500px;
         height:600px;
     }
