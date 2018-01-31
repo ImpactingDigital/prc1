@@ -1,0 +1,1082 @@
+/* --------------------------------------------
+Specific stille for the PRIMAVERA Landing Pages
+-------------------------------------------- */
+
+/* General */
+h1,h2,h3{
+    padding:0;
+    color:inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;   
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.2rem;
+    margin-bottom:0;
+}
+@media screen and (min-width: 30em){
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.4rem;
+        margin-bottom:0;
+    }
+}    
+.container{
+	margin-left: auto;
+	margin-right: auto;
+    max-width: 1200px;
+    padding:1em;
+}
+.smart-girl-img .container{
+    max-width:900px;
+}
+.logo-primavera-academy{
+    width:280px;
+    background-image: url(assets/images/logo-primavera-academy-hbm.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    height:50px;
+    margin:0 auto;
+    image-rendering: optimizeSpeed;             /*                     */
+    image-rendering: -moz-crisp-edges;          /* Firefox             */
+    image-rendering: -o-crisp-edges;            /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+    -ms-interpolation-mode: nearest-neighbor;
+}
+.landing-page .site-content-contain .site-content{
+    padding-top: 0;
+}
+
+footer.site-footer{
+    margin-bottom:100px;
+    background-color:#fff;
+    border-top:0;
+}
+.cert-dgert{
+    background-image:url(assets/landingpages/images/DGERT-entidade-certificada.png);
+    width:112px;
+    height:77px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:80px auto;
+}
+@media screen and (min-width: 45em){
+    .cert-dgert{
+        float:right;
+        margin:0 0 -20px;;
+    }
+    .info-footer{
+        float:left;
+        width:auto;
+    }
+}
+.landing-page p{
+    max-width: 900px;
+}
+
+.landing-page .text-center p{
+    margin:0 auto;
+}
+
+/* BLOCKS */
+
+.first-block{
+    width:100%;
+    padding:10px;
+    min-height:440px;
+    text-align: center;
+    overflow:hidden;
+}
+
+.full-block, a.full-block{
+    display:block;
+    width:100%;
+    padding:10% 10px;
+}
+
+.blue-bg{
+    background-color:#0897B6;
+    color:#fff;
+}
+.blue-bg a, .blue-bg a:hover{
+    color:#fff;
+    cursor:pointer;
+}    
+.grey-bg{
+    background-color:#eaeced
+}
+@media screen and (min-width: 30em){
+    .first-block{
+        min-height:650px;
+    }      
+}
+.oportunities-image{
+    background-image:url(assets/landingpages/images/3a2/vagas-de-emprego-bg.jpg);
+    background-size:contain;
+    background-repeat:no-repeat repeat;
+    background-attachment: fixed;
+    background-position:right;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top:15%;
+    padding-bottom:15%;
+}
+.oportunities-image p,.oportunities-image h2{
+    max-width:500px;
+
+}
+@media screen and (max-width: 46em){
+    .oportunities-image .container{
+        background-color:#fff;
+        box-shadow:0 2px 20px rgba(0,0,0,.2); 
+        margin-top:200px;
+        text-align:center;
+    }
+}
+@media screen and (min-width: 48em){
+    .oportunities-image{
+        background-size:600px;
+    }
+    .menina-cafe-image .price-box{
+        margin-left:auto;
+    }
+
+}
+.price-box{
+    padding:20px 0 40px;
+    font-size: 1.8em;
+    max-width: 420px;
+    margin:0 auto;
+}
+@media screen and (min-width: 48em){
+    
+.price-box{
+    margin:0 0;
+}
+}
+.col-1-2{ width:50%;}
+.price-box .block{
+    display: flex;
+    flex-wrap: wrap;;
+    justify-content: center;
+    text-align: center;
+}
+.price-box .block .title{
+    width:100%;
+    margin:20px;
+    padding-top:20px;
+    border-top:1px solid rgba(0,0,0,.2);
+}
+.price-box .block .description{
+    font-size:.6em;
+}
+.price-box .block .price{
+    font-size:1.5em;
+    margin-bottom:0;
+    line-height: 1em;
+}
+
+/****************************** 
+        Typography
+*******************************/
+.large-text{
+    font-size: 1.8em;
+}
+.entry-content a.large-text, .entry-content a.large-text:hover{
+    box-shadow: none;
+    background-color:transparent;
+}
+
+
+/****************************** 
+        Sections Images 
+*******************************/
+.fliying-blue-rocket{
+    background-image:url(assets/landingpages/images/3a2/rocket.png);
+    width:260px;
+    height:300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position:absolute;
+    right:-80px;
+    top:220px;
+    z-index: -1;
+    animation: bobble 4s infinite;  
+}
+.thinking-euro{
+    background-image:url(assets/landingpages/images/thinking-euro-sm.png);
+    width:140px;
+    height:150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position:absolute;
+    bottom:0;
+    right:20px;
+    animation: bobble 4s infinite;
+}
+.dreaming-boy-img{
+    background-image:url(assets/images/landing-pages/3a1/a-sonhar-com-emprego.jpg);
+    background-size:700px;
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+    padding-bottom:340px;
+}
+.smart-girl-img{
+    background-image:url(assets/images/landing-pages/3a1/rapariga-a-procura-de-emprego.jpg);
+    background-size:120%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom:200px;
+}
+.rocket-career-image{
+    background-image:url(assets/landingpages/images/3a2/dreaming-career-bgw.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 280px;
+    position: relative;
+    z-index: 1;
+}
+
+.mobile-phone-guy-image{
+    background-image:url(assets/landingpages/images/3a2/mobile-phone-guy-sm.jpg);
+    background-size:150%;
+    padding-bottom:300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.rapaz-profissional-image{
+    background-image:url(assets/landingpages/images/rapaz-profissional-sm.jpg);
+    background-size:120%;
+    padding-bottom:300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.pessoas-felizes-image{
+    background-image:url(assets/landingpages/images/grupo-de-pessoas-sorrindo-sm.jpg);
+    background-size:100%;
+    padding-bottom:300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.menina-cafe-image{
+    background-image:url(assets/landingpages/images/menina-cafe-sm.jpg);
+    background-size:100%;
+    padding-bottom:180px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position:relative;
+}
+@media screen and (min-width: 30em){
+    .dreaming-boy-img{
+        background-size: 150%;
+        padding-bottom:340px;
+    }
+    .smart-girl-img{
+        background-size:100%;
+        background-position: bottom right;
+        padding-bottom:280px;
+    }   
+    .rocket-career-image{
+        background-size:100%;
+        padding-bottom:280px;
+    }
+    .mobile-phone-guy-image{
+        padding-bottom:420px; 
+        background-size: 100%;      
+    }        
+    .menina-cafe-image{
+        padding-bottom:300px;
+    }
+    .rapaz-profissional-image{
+        padding-bottom:480px;
+    }
+}   
+@media screen and (min-width: 48em){
+    .smart-girl-img{
+        background-size:900px;
+        padding-bottom:380px;
+    }   
+    .rocket-career-image{
+        background-size:50%;
+        padding-bottom:20px;
+    }
+    .fliying-blue-rocket{
+        width:300px;
+        height:360px;
+        right:-50px;
+        top:0px;
+    }
+    .mobile-phone-guy-image{
+        background-image:url(assets/landingpages/images/3a2/mobile-phone-guy-lg.jpg);
+        background-position: bottom right; 
+        padding-bottom:300px;
+        text-align: left!important;
+        
+    }
+    .mobile-phone-guy-image p{
+        margin:0 0!important;
+    }        
+    .mobile-phone-guy-image h2,
+    .mobile-phone-guy-image p,
+    .pessoas-felizes-image h2,
+    .pessoas-felizes-image p,
+    .menina-cafe-image p,
+    .menina-cafe-image h2,
+    .rapaz-profissional-image p,
+    .rapaz-profissional-image h2 {
+        max-width: 500px;
+    }
+    .rapaz-profissional-image{
+        background-image:url(assets/landingpages/images/rapaz-profissional.jpg);
+        background-position: bottom right; 
+        background-size:auto 100%;
+        background-attachment: scroll;
+        padding-bottom:10%;
+        
+    }
+    .pessoas-felizes-image{
+        background-image:url(assets/landingpages/images/grupo-de-pessoas-sorrindo.jpg);
+        background-position: bottom right; 
+        background-size:80%;
+        padding-bottom:10%;
+    }
+    .menina-cafe-image{
+        background-image:url(assets/landingpages/images/menina-cafe.jpg);
+        background-size:110%;
+        padding-bottom:0%;        
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        text-align: right;
+        background-attachment: scroll;
+    }
+    .menina-cafe-image p {
+        margin-left:auto;
+    }
+    .menina-cafe-image h2 {
+        margin-left:auto;
+    }
+    .thinking-euro{
+        background-image:url(assets/landingpages/images/thinking-euro.png);
+    width:240px;
+    height:250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:10%;
+    left:20px;
+    }
+}    
+@media screen and (min-width: 50em){
+    .dreaming-boy-img{
+        background-size:1100px;
+        background-position: bottom left;
+    }
+
+    .smart-girl-img{
+        background-size:1100px;
+        padding-bottom:500px;
+    }
+    .rocket-career-image p{
+        max-width:600px;
+
+    }
+}
+@media screen and (min-width: 90em){
+    .thinking-euro{
+        width:360px;
+        height:360px;
+    }
+    .rocket-career-image{
+        background-size:auto 120%;
+        background-position:top left;
+    }   
+    .mobile-phone-guy-image{
+        background-size: 80%;
+    }
+    .menina-cafe-image{
+        background-size:1400px;
+    }
+    .dreaming-boy-img{
+        background-size: auto 100%;
+    }
+    .dreaming-boy-img .container{
+        max-width:660px;
+        width:50%;
+        margin:15% 0 0 auto;
+        text-align: right;
+    }
+}
+@media screen and (min-width: 100em){
+    .rocket-career-image{
+        background-size:auto 140%;
+        background-position:top left;
+    }  
+    .fliying-blue-rocket{
+        width:500px;
+        height:600px;
+    }
+}
+.depoimentos-block .video{
+}
+.depoimentos-block{
+    padding:5% 10px 5%;
+}
+.depoimentos-block .container.depoimentos{
+    margin:50px auto 150px;
+}
+.depoimentos-block .depoimento{
+    background-color:#fff;
+    box-shadow:0 4px 20px rgba(0,0,0,.2);
+}
+@media screen and (max-width: 48em){
+    .depoimentos-block{
+        padding:5% 10px 5%;
+    }
+    .depoimentos-block .depoimento{
+        background-color:#fff;
+    }
+    .depoimentos-block .depoimentos .foto{
+        bottom:-90px;
+        top:auto;
+        left:calc(50% - 40px);
+    
+    }
+}
+/*  Logo list */
+ul.logo-list{
+    margin-bottom:-80px;
+    transform:translate(0, 20px);
+    margin-left:auto;
+    margin-right:auto;    
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul.logo-list li{
+    width:120px;
+    height:120px;
+    margin:5px;
+    background-color:#fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}    
+ul.logo-list li img{
+    width:90%;
+    margin:5%
+}
+@media screen and (min-width: 48em){
+    ul.logo-list{
+    margin-bottom:-90px;
+    transform:translate(0, 60px);
+    }
+    ul.logo-list li{
+        width:160px;
+        height:160px;
+    }
+}    
+@media screen and (min-width: 90em){
+    ul.logo-list{
+        margin-bottom:-160px;
+    transform:translate(0, 60px);
+    }
+}
+
+/* 
+    infographics block
+*/
+.estatistics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.estatistics .info{
+    width:100%;
+}
+.estatistics > p{
+    display:none;
+}
+.estatistics .info .graphic{
+    width:90%;
+    height:200px;
+    margin:0 auto;
+    min-width: 200px;
+    background-image: url(assets/landingpages/images/graficos-01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    color:#0897B6;
+    font-size: 40px;
+    padding-top:70px;
+}
+.estatistics .info .graphic.empregabilidade{
+    background-image: url(assets/landingpages/images/graficos-02.png);
+    
+}
+.estatistics .info .graphic.lecionados{
+    background-image: url(assets/landingpages/images/graficos-01.png);
+    
+}
+.estatistics .info .graphic.certificados{
+    background-image: url(assets/landingpages/images/graficos-01.png);
+    
+}
+.estatistics .info .description{
+    font-size: .9em;
+    font-weight: 600;
+    color:#0897B6;
+    margin-top:20px;
+}
+@media screen and (min-width: 48em){
+    .estatistics .info{
+        max-width: 200px;
+        margin:2%;
+    }
+}    
+
+
+
+/***************************************************
+                   CTAs
+***************************************************/
+.cta-middle-section{
+text-align: center;
+margin-top:-40px;
+margin-bottom:-40px;
+}
+.cta-middle-section .button{
+    margin: 0 auto;
+}
+/***************************************************
+                   Chat Smarkio
+***************************************************/
+.chat-smarkio{
+    position: fixed;
+    right: 0;
+    width: 320px;
+    height: 580px;
+    bottom: 0;
+    border: 0;
+}
+
+.cta-chat-smk{
+    position:fixed;
+    padding:20px;
+    right:5%;
+    bottom:10px;
+    width:90%;
+    height:100px;
+    cursor:pointer;
+    z-index: 100;
+    box-sizing:border-box;
+}
+@media screen and (min-width:40em){
+    .cta-chat-smk{
+        width:300px;
+        right:10px
+    }
+}
+/* EDITAR CORES NAS LINHAS ABAIXO */
+.cta-chat-smk.message > svg {fill: #0776BC;}
+/* EDITAR CORES NAS LINHAS ACIMA */
+
+@keyframes pop {
+    0% {
+      transform: scale(0, 1);
+    }
+    90% {
+      transform: scale(1.1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+@keyframes avatar-intro {
+    0% {
+      transform: translateY(20px) rotate(40deg);
+      opacity: .0;
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+      opacity: 1;
+    }
+}
+.cta-chat-smk .page-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.cta-chat-smk .content	{
+    margin: 40px auto 10px;
+    justify-content:center;
+    background-color: transparent;
+}
+.cta-chat-smk .avatar {
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color: black;
+    border-radius: 50px;
+    height: 58px;
+    width: 58px;
+    background-image: url('assets/images/avatar.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.15);
+    animation-name: avatar-intro;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    transform-origin: middle center;
+}
+.cta-chat-smk .message {
+    position:absolute;
+    left:60px;
+    bottom:10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    text-align:center;
+    color: #ffffff;
+    height: auto;
+    background-color: rgba(7, 118, 188, 0.95);
+    box-shadow: 0 2px 2px rgba(5, 90, 140, 0.2), 0 10px 20px rgba(5, 90, 140, .5);
+    padding: 12px 8px;
+    border-radius: 12px 12px 12px 0;
+    animation-name: pop;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+    transform-origin: left center;
+    width: calc(100% - 60px);
+}
+.cta-chat-smk .notification {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    background-color: #E74F27; 
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    font-size: 14px;
+    line-height: 22px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.23);
+    animation-name: pop;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+    font-family: 'Cabin', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+@media only screen and (min-width: 48em) {    
+    .cta-chat-smk .message{
+        font-size: 18px;
+    }
+}
+/***************************************************
+                Animations
+***************************************************/
+.animbobble { 
+    animation: bobble 4s infinite;  
+} 
+
+@keyframes bobble {
+    0% {
+        transform: translate3d(0, 0, 0px);
+        animation-timing-function: linear;
+    }
+    25% {
+        transform: translate3d(10px, -10px, 0px);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: translate3d(20px, 0, 0px);
+        animation-timing-function: linear;
+        
+    }
+    75% {
+        transform: translate3d(10px, 10px, 0px);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: translate3d(0, 0, 0px);
+        animation-timing-function:linear;
+        
+    }
+}
+
+
+.oportunities-image{
+    animation: slideup 90s infinite;
+}
+@media only screen and (min-width: 48em) {
+    .oportunities-image{
+        animation: slideup 50s infinite;
+    }
+}    
+@keyframes slideup{
+    0%{
+        background-position:right 100%;
+        animation-timing-function: linear;
+    }
+    100%{
+        background-position:right 0%;
+        animation-timing-function: linear;
+    }
+}
+/***************************************************
+                    certifications area
+***************************************************/
+.lower-section {
+    background-color: #EBEBEB;
+}
+.certifications-block .swipper.mobile, .certifications-block .swipper.mobile{
+    overflow:hidden;
+}
+.certifications-block{
+    height:640px;
+    position:relative;
+    z-index: 2;
+}
+@media only screen and (min-width: 48em) {
+    .certifications-block{
+        height:auto;
+    }
+}    
+/***************************************************
+                      MOBILE
+***************************************************/
+/*     Estado display      */
+.certifications-block .desktop{
+    display: none;
+}
+.certifications-block .upper-section-mobile{
+    position: relative;
+    background-color:#0897B6;
+    margin-bottom: 600px;
+    height: 200px;
+}
+/*     Estrutura dos Sliders     */
+.certifications-block .swiper-slide:nth-child(1n){
+    width: 80%;
+}
+.certifications-block .swiper-slide:nth-child(2n){
+    width: 80%;
+}
+
+/*     Estrutura individual do Slider     */
+
+.certifications-block .tab-image{
+    height: 200px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    margin:0 auto
+}
+.certifications-block .tab-title, .tab-content{
+    text-align: center;
+}
+.certifications-block .tab-title{
+    padding: 30px 0;
+    color: #fff;
+}
+.certifications-block .tab-title h3{
+    font-weight: 500;
+}
+.certifications-block .tab-content{
+    padding: 0;
+    background-color:#fff;
+    color: #333;
+    height:0;
+    overflow: hidden;
+    transition:all .2s ease;
+}
+.certifications-block .swiper-slide-active .tab-content{
+    height:auto;
+    padding: 30px 12%;
+}
+/*   Imagens associadas a cada tab   */
+.certifications-block #rh-tab, .certifications-block .recursos-humanos{
+    background-image: url(assets/images/bg-cert-pessoas.jpg);
+}
+.certifications-block #contabilidade-tab, .certifications-block .contabilidade{
+    background-image: url(assets/images/bg-cert-contabilidade.jpg);
+}
+.certifications-block #vendas-tab, .certifications-block .vendas{
+    background-image: url(assets/images/bg-cert-vendas.jpg);
+}
+.certifications-block #tesouraria-tab, .certifications-block .tesouraria{
+    background-image: url(assets/images/bg-cert-tesouro.jpg);
+}
+.certifications-block #compras-tab, .certifications-block .compras{
+    background-image: url(assets/images/bg-cert-compras.jpg);
+}
+/***************************************************
+                      DESKTOP
+***************************************************/
+@media only screen and (min-width: 48em) {
+    /*     Estado display      */
+    .certifications-block .mobile{
+        display: none;
+    }
+    .certifications-block .desktop{
+        display: block;
+    }
+    .certifications-block{
+        margin-top:-5%;
+    }
+    /*    Estrutura    */
+    .certifications-block .upper-section-desktop{
+        height:200px;
+        position: relative;
+        background-color:#0897B6;
+    }
+    .certifications-block .container-tabs {
+        margin: auto;
+        position: absolute;
+        top: 1vh;
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+        
+    /*    Titulos    */
+    .certifications-block .title-desktop {
+        width: 80%;
+        height: 50px;
+        font-size: 1.1em;
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+        line-height: 1em;
+        margin: 0 auto;
+    }
+    .certifications-block .title-desktop p{
+        font-weight: 500;
+    }
+
+    /*    Imagens dos tabs   */
+    .certifications-block .item1 {
+        width: 150px;
+        height: 150px;
+        background-position: left;
+        background-size: cover;
+        margin: 20px 10px 10px 10px;
+        cursor:pointer;
+        transition: all .2s cubic-bezier(.6,0,.45,1.3); 
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    .certifications-block .item1:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .certifications-block .colorfilter{
+        /* Classe que ÃƒÆ’Ã‚Â© filha do '.item1' e ÃƒÆ’Ã‚Â  qual ÃƒÆ’Ã‚Â© adicionada a classe
+           '.realce2' no script tabs-highlight.js
+        */
+        width: 100%;
+        height: 100%;
+    }
+
+    /*    SecÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o colapsada    */
+    .certifications-block .collapse-section {
+        display: none;
+    }
+
+    .certifications-block .content-cursos {
+        width: 100%;
+        height: 380px;
+    }
+
+    .certifications-block .descricao-curso {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        padding: 150px 0 60px;
+    }
+
+    .certifications-block .descricao-curso p {
+        font-size: 1.1em;
+    }
+
+    /*    BotÃƒÆ’Ã‚Â£o Slide Up & Down   */
+    .certifications-block .collapse-btn {
+        width:40px;
+        height:40px;
+        padding:0;
+        margin-bottom:80px;
+        background-image:url(assets/landingpages/images/close_button.png);
+        background-color:transparent;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+        border-radius:50%;
+        border:4px dashed transparent;
+        
+    }
+
+    .certifications-block .collapse-btn:hover {
+        cursor: pointer;
+        background-color: #fff;
+        border:4px solid #fff;
+    }
+
+    .certifications-block .collapse-btn:focus {
+        outline: 0 !important;
+    }
+
+    /*Classes utilizadas no script tabs-highlight para realÃƒÆ’Ã‚Â§ar as tabs*/
+    .certifications-block .realce {
+        /*    Class chamada no tabs-highlight.js para aumentar a imagem
+              ao clicar
+        */
+        transition: 0.4s;
+        transform: scale(1.1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2), 0 6px 30px rgba(0,0,0,0.4);
+        
+    }
+    .certifications-block .realce2 {
+        /*    Class chamada no tabs-highlight.js para tornar as imagens
+              escuras ao clicar
+        */
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+}
+
+
+/***************************************************
+            Forms
+****************************************************/
+.yellow-form{
+    background-color:rgba(250, 170, 45, 0.8);
+    width:300px;
+    height:320px;
+    box-shadow:0 4px 20px rgba(230, 150, 35, 0.6);
+    margin:0 auto;
+    z-index: 0;
+    border:0;
+}
+@media screen and (min-width: 48em){    
+    .yellow-form{
+        position:absolute;
+        right:15%;
+        z-index: 10;
+        width:400px;
+        margin-top:40px
+    }
+}
+.yellow-form br{
+display: none;
+}
+
+/*------------------------
+         THANK YOU - STYLE
+------------------------*/
+.wrapper-success-page, .wrapper-error-page{
+    height: 100vh;
+    width:100%;
+    background-color: #F69D29;
+    position: fixed;
+}
+.container-success-page, .container-error-page p{
+    font-family: 'Montserrat','sans-serif';
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+/*------------------------
+        ERROR PAGE - STYLE
+------------------------*/
+
+
+
+/*------------------------
+              FORM - STYLE
+------------------------*/
+
+.yellow-form, .container-success-page, .container-error-page{
+    margin: auto;
+    padding: 25px;
+    height:auto;
+}
+..yellow-form h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+}
+.container-success-page, .container-error-page h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+}
+.yellow-form input[type=text], .yellow-form input[type=email], select.custom-select, input[type=submit]{
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.yellow-form input[type=text],
+.yellow-form input[type=email]{
+    width: 100%;
+    border: none;
+    border-radius: inherit;
+    padding-left: 10px;
+}
+.yellow-form input[type=text]::placeholder{
+    font-family: 'Montserrat','sans-serif';
+    color: #ABAAA6;
+}
+.yellow-form select.custom-select{
+    background-color:#fff;
+    background-image: url("../img/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size:10px;
+    background-position:calc(100% - 10px) center;
+    width: 100%;
+    border: none;
+    border-radius: inherit;
+    padding-left: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+.yellow-form input[type=submit]{
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #1F1F1F;
+    border: none;
+    border-radius: inherit;
+
+    font-family: 'Montserrat','sans-serif';
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.clear-space{
+    height: 20px;
+}

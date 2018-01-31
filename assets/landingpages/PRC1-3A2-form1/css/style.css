@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+input[type=submit]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input,select:focus{
+    outline-color: #ffbf46;
+}
+
+/*------------------------
+     IFRAME WINDOW - STYLE
+------------------------*/
+.iframe-container{
+    width: 100%;
+}
+.iframe-window{
+    /* apagar no final */
+    position: relative;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+
+    width: 300px;
+    height: 340px;
+    border: none;
+}
+/*------------------------
+         THANK YOU - STYLE
+------------------------*/
+.wrapper-success-page, .wrapper-error-page{
+    height: 100vh;
+    width:100%;
+    background-color: #F69D29;
+    position: fixed;
+}
+.container-success-page, .container-error-page p{
+    font-family: 'Montserrat','sans-serif';
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+/*------------------------
+        ERROR PAGE - STYLE
+------------------------*/
+
+
+
+/*------------------------
+              FORM - STYLE
+------------------------*/
+.wrapper{
+    width: 100%;
+    background-color: rgba(250, 170, 45, 0.8);
+}
+.container, .container-success-page, .container-error-page{
+    margin: auto;
+    padding: 5%;
+    height:100vh;
+}
+.container h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+}
+.container-success-page, .container-error-page h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+}
+.container input[type=text], .container input[type=email], select.custom-select, input[type=submit]{
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.container input[type=text],
+.container input[type=email]{
+    width: 100%;
+    border: none;
+    border-radius: inherit;
+    padding-left: 10px;
+}
+.container input[type=text]::placeholder{
+    font-family: 'Montserrat','sans-serif';
+    color: #ABAAA6;
+}
+.container select.custom-select{
+    background-color:#fff;
+    background-image: url("../img/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size:10px;
+    background-position:calc(100% - 10px) center;
+    width: 100%;
+    border: none;
+    border-radius: inherit;
+    padding-left: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+.container input[type=submit]{
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #1F1F1F;
+    border: none;
+    border-radius: inherit;
+
+    font-family: 'Montserrat','sans-serif';
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.clear-space{
+    height: 20px;
+}

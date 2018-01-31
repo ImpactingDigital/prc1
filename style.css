@@ -1,0 +1,1702 @@
+/*
+Theme Name: Skills - Child 2017
+Theme URI: http://impacting.digital
+Description: Skills is a Twenty Fifteen Child Theme made by Impacting Digital for PRIMAVERA Academy Skills
+Author: Impacting Digital - David Pereira
+Author URI: http://impacting.digital
+Template: twentyseventeen
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready, Primavera Academy, Primavera, Academy, Skills
+Text Domain: skills-twenty-seventeen-child
+*/
+
+html, body, button, input, select, textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+@media screen and (min-width: 48em){
+    body p{
+        line-height: 1.8em;
+    }
+}
+h2 + h3{
+    margin-top:-1em;
+}
+.post h2{
+    clear:none;
+}
+@media screen and (max-width:768px) {
+    .hide-mobile{display:none!important;}
+}
+
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+.text-center{
+    text-align: center;
+}
+.single-post .entry-title, .page .entry-title{
+    font-size: 2.5em;
+}
+.entry-content h2{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.entry-content h3{
+    font-size: 1.6em;
+}
+/*--------------------------------------------------------------
+6.0 Forms
+--------------------------------------------------------------*/
+.entry-content a.button, .button{
+    display: inline-block;
+    background-color: #0897B6;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    transform: scale(1);  
+    transition: all .1s ease!important;
+    box-shadow: 0 0 0 rgba(0, 130, 150, 0);
+
+}
+.entry-content a.button:hover, .button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 130, 150, 0.4);
+    color:#fff;
+}   
+.entry-content a.button:focus, .entry-content a.button:active, .button:active, .button:focus{
+    transform: scale(.95);
+    box-shadow: 0 0 0 rgba(0, 0,0, 0);
+}   
+button, input[type="button"], input[type="submit"]{
+    border-radius:0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.red-btn, .button.red-btn, .entry-content a.button.red-btn{
+    background-color: #E74F27;
+    
+}
+.red-btn:hover, .button.red-btn:hover, .entry-content a.button.red-btn:hover{
+    background-color: rgb(248, 93, 54);
+    box-shadow: 0 4px 15px rgba(248, 93, 54,0.5);
+    
+}
+.big-btn{
+    font-size: 1.4em;
+    padding:16px 30px;
+}
+/*--------------------------------------------------------------
+8.0 Lists
+--------------------------------------------------------------*/
+ul,
+ol {
+	margin: 0 0 1.5em 2em;
+	padding: 0;
+}
+.post ul li{
+    margin-bottom:20px;
+}
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+a {
+	color: #222;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	color: rgba(0,165,200,1);
+    outline: 0;
+}
+.entry-content a:hover,
+.entry-content a:active,
+.entry-content a:focus {
+    background-color:rgba(0,165,200,1);
+    color:#fff;
+	-webkit-box-shadow: inset 0 0 0 rgba(0,165,200,0), 0 2px 0 rgba(0,165,200,1);
+    box-shadow: inset 0 0 0 rgba(0,165,200,0), 0 2px 0 rgba(0,165,200,1);
+}
+
+
+
+/* Hover effects */
+
+.entry-content a,
+.entry-summary a,
+.widget a,
+.site-footer .widget-area a,
+.posts-navigation a,
+.widget_authors a strong {
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,165,200,1);
+	box-shadow: inset 0 -2px 0 rgba(0,165,200,1);
+}
+
+.entry-summary a:focus,
+.entry-summary a:hover,
+.widget a:focus,
+.widget a:hover,
+.site-footer .widget-area a:focus,
+.site-footer .widget-area a:hover,
+.posts-navigation a:focus,
+.posts-navigation a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.comment-metadata a.comment-edit-link:focus,
+.comment-metadata a.comment-edit-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.widget_authors a:focus strong,
+.widget_authors a:hover strong,
+.entry-title a:focus,
+.entry-title a:hover,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.page-links a:focus .page-number,
+.page-links a:hover .page-number,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-footer .cat-links a:focus,
+.entry-footer .cat-links a:hover,
+.entry-footer .tags-links a:focus,
+.entry-footer .tags-links a:hover,
+.post-navigation a:focus,
+.post-navigation a:hover,
+.pagination a:not(.prev):not(.next):focus,
+.pagination a:not(.prev):not(.next):hover,
+.comments-pagination a:not(.prev):not(.next):focus,
+.comments-pagination a:not(.prev):not(.next):hover,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+a:focus .nav-title,
+a:hover .nav-title,
+.edit-link a:focus,
+.edit-link a:hover,
+.site-info a:focus,
+.site-info a:hover,
+.widget .widget-title a:focus,
+.widget .widget-title a:hover,
+.widget ul li a:focus,
+.widget ul li a:hover {
+	color: rgba(0,165,200,1);
+	-webkit-box-shadow: inset 0 0 0 rgba(0,165,200,0), 0 2px 0 rgba(0,165,200,1);
+	box-shadow: inset 0 0 0 rgba(0,165,200,0), 0 2px 0 rgba(0,165,200,1);
+}
+.post-navigation a:focus .icon,
+.post-navigation a:hover .icon {
+	color: rgba(0,165,200,1);
+}
+
+
+/*--------------------------------------------------------------
+12.0 Navigation
+--------------------------------------------------------------*/
+    .navigation-top {
+        background-color:rgba(0,150,180,.85);
+        border-color:rgba(0,150,180,.85);
+        text-align: center;
+        border: 0;
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        
+    }
+    .navigation-top a {
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    }
+    .navigation-top .main-navigation .menu .menu-item a:hover{
+        color:rgba(255,255,255,.8)
+    }
+    @media screen and (min-width:40em){
+    .navigation-top .main-navigation .menu .menu-item a:hover{
+        transition:box-shadow 0.2s ease;
+        box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+    .navigation-top .main-navigation .menu .menu-item a:hover{
+        box-shadow: inset 0 -4px 0 0 rgba(10, 215, 255, 0.5);
+    }
+    }
+    .main-navigation.toggled-on ul{
+        background-color:transparent;
+    }
+
+    .main-navigation li,
+    .main-navigation > div > ul{
+        border-bottom: 0;
+        border-top: 0;
+    }
+    
+    #top-menu{
+        text-align: center;
+    }
+
+    .menu-toggle{
+        width:100%;
+        background-color:rgba(0,0,0,1);
+        color:#fff;
+        box-sizing: border-box;
+        margin:0;
+    }
+    .menu-toggle:hover{
+        background-color:rgba(0,0,0,.5);
+    }
+    .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a{
+        color:#003B49;
+        background-color:rgba(10, 215, 255, 0.2);
+    }
+    .social-navigation{
+        float: right;
+        text-align: right;
+    }
+
+/* Header Seach Form Toggle */
+    .search-form label{
+        Margin-bottom:0;
+    }
+    .search-menu{
+        position: absolute;
+        width: 100%;
+        z-index: 6;
+    }
+
+    .search-bar{
+        background-color: #fff;
+    }
+    .search-toggle-button,
+    input.toggle-search[type=checkbox]{
+        position: absolute;
+        top: -42px;
+        right: 0;
+        z-index: 6;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    input.toggle-search[type=checkbox] {
+        z-index: 99;
+        opacity: 0;
+     }
+    .search-toggle-button .icon{
+        color:#fff;
+    }
+    .search-toggle-button:hover .icon{
+        opacity:.8;
+    }
+    .search-toggle-button .icon{
+        width:2em;
+        height:2em;
+    }        
+    
+     .search-menu .search-field{
+         border:0;
+         padding-top:20px;
+         padding-bottom:20px;
+         border-radius:0;
+         top:100px;
+
+     }
+     /* Default State */
+     .search-menu .search-bar {
+        height:0;
+        overflow: hidden;
+        top:-60px;
+        transition:all .2s ease;
+     }
+     
+     /* Toggled State */
+     input.toggle-search[type=checkbox]:checked ~ .search-bar {
+        height:64px;
+        top:0px;
+        border-bottom:2px solid #eee;
+     }   
+     @media screen and (min-width: 30em){
+        input.toggle-search[type=checkbox]:checked ~ .search-bar {
+            height:70px;
+        }
+    }   
+    @media screen and (min-width: 48em) and (max-width: 56em){
+        .navigation-top a{
+            font-size: .8em;
+            padding:15px .5em;
+        }
+    }     
+    
+    @media screen and (min-width: 48em){
+        .search-toggle-button,
+        input.toggle-search[type=checkbox]{
+            top:-42px;
+        }
+        .search-menu .search-field{
+            font-size: 32px;
+            text-align: center;
+        }
+        input.toggle-search[type=checkbox]:checked ~ .search-bar {
+            height:90px;
+         }
+         .main-navigation a{
+            
+         }
+    }        
+
+/*--------------------------------------------------------------
+ Footer
+--------------------------------------------------------------*/
+    .info-footer{
+        font-size:.7em;
+        display:block;
+        width:100%;
+        clear:both;
+        text-align: center;
+    }
+    .site-footer{
+        background-color:#f1f2f3;
+        font-size: .7em;
+    }
+    .site-footer .widget ul li, .site-footer .widget ol li{
+        border-bottom: 0;
+        border-top: 0;
+    }
+    .simbolo-primavera{
+        width: 30px;
+        height: 30px;
+        background-image: url(assets/images/simbolo-primavera-blk.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        float: left;
+        margin-right: 10px;
+    }
+    .logo-primavera{
+        display: block;
+        text-decoration: none;
+        width: 134px;
+        height: 20px;
+        background-image: url(assets/images/logo-primavera-blue.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        image-rendering: optimizeSpeed;             /*                     */
+        image-rendering: -moz-crisp-edges;          /* Firefox             */
+        image-rendering: -o-crisp-edges;            /* Opera               */
+        image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+        image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+    a.logo-primavera{
+        box-shadow: none;
+        margin-top:-8px;
+        margin-bottom:10px;
+        display: block;
+    }
+    a.logo-primavera:hover{
+        text-decoration: none;
+        box-shadow: none;
+    }
+    .social-navigation + .site-info{
+        margin:0;
+    }
+    .social-navigation.footer-widget{
+        width:100%;
+    }
+    .social-navigation.footer-widget ul{
+        margin:0;
+        display:flex;
+    }
+    
+    @media screen and (min-width: 48em){
+        .site-info {
+            width: 100%;
+            text-align: left;
+        }
+        .logo-primavera{
+            display: inline-block;
+            float: left;
+            margin-right:10px;
+        }
+        .info-footer{
+            text-align: left;
+        }            
+    }
+    
+    /*
+    Contacts list*/
+    ul.contacts-list{
+        line-height: 2em;
+        list-style: none;
+        margin: 0;
+    }
+    ul.contacts-list .icones{
+        margin-left:15px;
+        
+    }
+    ul.contacts-list a[href^=tel], ul.contacts-list a{
+        text-decoration: none;
+        color:#000;
+    }
+@media screen and (min-width: 48em){
+	.site-footer .widget-column.footer-widget-1 {
+		float: left;
+		width: 33.33%;
+		padding: 0 5px;
+	}
+
+	.site-footer .widget-column.footer-widget-2 {
+		float: left;
+		width: 33.33%;
+		padding: 0 5px;
+	}
+    .site-footer .widget-column.footer-widget-3 {
+		float: left;
+		width: 33.33%;
+		padding: 0 5px;
+    }
+}
+/*--------------------------------------------------------------
+Banner
+--------------------------------------------------------------*/
+.banner-skills{
+    width:100%;
+    height:200px;
+    background-size:cover;
+    background-position:center bottom;
+    overflow:hidden;
+
+}
+.banner-skills .banner-image{
+    background-image:url(assets/images/primavera-steps-default.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	position:absolute;
+	width:100%;
+    height:280px;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+.banner-skills .banner-slogan{
+    color:#fff;
+    display:block;
+    z-index:6;
+    position:absolute;
+    font-size:1.5em;
+    bottom:10px;
+    right:20px;
+    text-align:right;
+    line-height: 1em;
+    text-shadow: 0 2px 10px rgba(0,0,0,.5);
+    text-transform: uppercase;
+}
+@media screen and (min-width: 30em){
+ 	.banner-skills .banner-image{
+    	height:360px;
+    }
+}
+@media screen and (min-width: 48em){
+    
+    .banner-skills{
+    	height:300px;
+    }
+	.banner-skills .banner-image{
+    	height:500px;
+    }
+    .banner-skills .banner-slogan{
+    	bottom:20px;
+    	right:10%;
+    	font-size:2.5em;
+    }
+}
+@media screen and (min-width: 64em){
+    .banner-skills .banner-slogan{
+        right:25%;
+    }        
+}    
+
+.category-header{
+    width:100%;
+    height:200px;
+    z-index: 1;
+}
+.category-header .category-image{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:200px;
+    background-image:url(assets/images/primavera-steps-default.jpg);
+    background-color:#e5e5e5;
+    background-size: cover;
+    background-position:center center;
+    z-index:0;
+}
+.category-header  .page-title{
+    display:none;
+}
+.category-gestao-pessoas .category-header .category-image{
+    background-image:url(assets/images/bg-lg-pessoas.jpg);
+}
+.category-contabilidade .category-header .category-image{
+    background-image:url(assets/images/bg-lg-contabilidade.jpg);
+}
+.category-tesouraria .category-header .category-image{
+    background-image:url(assets/images/bg-lg-tesouro.jpg);
+}
+.category-compras .category-header .category-image{
+    background-image:url(assets/images/bg-lg-compras.jpg);
+}
+.category-vendas .category-header .category-image,
+.category-compras-vendas .category-header .category-image{
+    background-image:url(assets/images/bg-lg-vendas.jpg);
+}
+@media screen and (min-width: 48em){
+	.category-header{
+		height:400px;
+	}
+	.category-header .category-image{
+		height:400px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.page-one-column .panel-content .wrap {
+		max-width: 1200px;
+}
+
+
+.single-post:not(.has-sidebar) #primary,
+.page.page-one-column:not(.twentyseventeen-front-page) #primary,
+.archive.page-one-column:not(.has-sidebar) .page-header,
+.archive.page-one-column:not(.has-sidebar) #primary{
+    max-width: 1024px;
+}
+
+/*--------------------------------------------------------------
+13.1 Header
+--------------------------------------------------------------*/
+/* Site Branding */
+
+	.site-branding {
+        background-color:rgb(0,165,200);
+        padding:4px 0;
+        text-align: center;
+        margin-bottom: 70px;
+        top:0;
+    }
+    .custom-header{
+        margin-bottom:0!important;
+        line-height: 1;
+    }
+    .site-branding a:hover{
+        background-color: transparent;
+        opacity:1;
+    }
+    .custom-logo-link img{
+        max-width: 200px;
+    }
+    .site-header:before{display: initial}
+    @media screen and (min-width: 48em){
+        .site-header{
+            display: flex;
+            width: 100%;
+        }
+        .site-branding a{
+            padding:8px 0 0;
+            vertical-align: middle;
+            
+        }            
+        .site-branding {
+            margin-bottom: 0!important;
+            height:100%;
+            background-color:transparent;
+            padding:0;
+        }   
+        .custom-logo-link img{
+            max-width: 160px;
+        }
+        .navigation-top{
+            position: relative;
+        }
+        .navigation-top .wrap{
+            padding-left:10px;
+            padding-right: 0;
+            padding-bottom:0;
+            padding-top:0;
+        }
+        .navigation-top.site-navigation-fixed:hover{
+            background-position: 10px 10px;
+        }
+        .navigation-top.site-navigation-fixed .wrap{
+            padding:0;
+        }
+        .navigation-top.site-navigation-fixed .wrap #top-menu{
+            text-align: center;
+        }
+        .navigation-top.site-navigation-fixed .wrap a{
+            padding:8px 10px 8px;
+            transition:all .4s ease;
+        }
+        #top-menu{
+            text-align: center;
+            margin-right: 40px;
+            margin-left: 200px;
+        }
+        .custom-header{
+            position: fixed;
+            left:0;
+            top:0;
+            z-index: 10;
+        }
+        .admin-bar .custom-header{
+        	top:34px;
+        }
+    }
+    @media screen and (min-width: 64em){
+        .site-branding .custom-logo-link {
+            padding:4px 0 0;
+        }
+        .site-branding .custom-logo-link img{
+            max-width: 180px;
+            margin: 2px 0;
+            image-rendering: optimizeSpeed;             /*                     */
+            image-rendering: -moz-crisp-edges;          /* Firefox             */
+            image-rendering: -o-crisp-edges;            /* Opera               */
+            image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+            image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+            -ms-interpolation-mode: nearest-neighbor;
+        }
+    }        
+/*--------------------------------------------------------------
+13.2 Front Page
+--------------------------------------------------------------*/
+.page.page-one-column .entry-header,
+.twentyseventeen-front-page.page-one-column .entry-header,
+.archive.page-one-column:not(.has-sidebar) .page-header{
+    margin-bottom:.5rem;
+}
+/*--------------------------------------------------------------
+13.4 Posts
+--------------------------------------------------------------*/
+.single-featured-image-header{
+    max-height:400px;
+    overflow:hidden;
+    position:relative;
+}
+.single-featured-image-header img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition:all .6s ease;
+    width:100%;
+    
+}
+.single-featured-image-header:hover img{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transform:scale(1.05);
+}
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+@media screen and (min-width: 48em){
+    .single-featured-image-header{
+        min-height:300px;        
+    }        
+    .single-featured-image-header img{
+        position: fixed;
+        top:0;
+    
+    }        
+    .page-template-inicio.has-sidebar:not(.error404) #primary,
+    .archive.has-sidebar:not(.error404) #primary, .archive #primary{
+        width:100%;
+    }
+}
+@media screen and (min-width: 64em){
+    .single-featured-image-header img{
+        top:-15%;
+        min-height: 380px;
+    }        
+    .has-sidebar:not(.error404) #primary {
+		float: left;
+		width: 68%;
+	}
+
+	.has-sidebar #secondary {
+		float: right;
+		padding-top: 0;
+		width: 26%;
+	}
+}
+@media screen and (min-width: 90em){
+    .single-featured-image-header{
+        min-height:480px;
+    }
+}
+.recent-posts,
+.blog .content-area .site-main,
+.archive .content-area .site-main
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+.popular-posts .post,
+.recent-posts .post,
+.blog .post,
+.archive .post{
+    overflow:hidden;
+    width: 100%;
+    height: 300px;
+    background-color:rgba(0,150,180,1);
+    position:relative;
+    margin:10px;
+    transition: transform .2s ease;
+    box-sizing: border-box;
+}
+.popular-posts .post:hover,
+.recent-posts .post:hover,
+.blog .post:hover,
+.archive .post:hover{
+    transform: scale(1.01);
+}
+
+.recent-posts .post:active,
+.blog .post:active,
+.archive .post:active{
+    transform: scale(1);
+}
+.recent-posts .post .post-thumbnail,
+.blog .post .post-thumbnail,
+.archive .post .post-thumbnail{
+    position:relative;
+    top:0;
+    left:0;
+    z-index: 1;
+    width:100%;
+    height:100%;
+}
+.popular-posts .post .post-thumbnail a,
+.recent-posts .post-thumbnail a,
+.blog .post-thumbnail a,
+.archive .post-thumbnail a{
+    position:relative;
+    display:block;
+    width:100%;
+    height:100%;
+}
+.popular-posts .post .post-thumbnail a img,
+.recent-posts .post-thumbnail a img,
+.blog .post-thumbnail a img,
+.archive .post-thumbnail a img{
+    position:absolute;
+    top:0%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-backface-visibility: hidden;
+	-webkit-transition: filter 0.2s;
+	transition: filter 0.2s, transform 0.6s;
+}
+.popular-posts .post:hover .post-thumbnail a img,
+.recent-posts .post:hover .post-thumbnail a img,
+.recent-posts .post:focus .post-thumbnail a img,
+.blog .post:hover .post-thumbnail a img,
+.blog .post:focus .post-thumbnail a img,
+.archive .post:hover .post-thumbnail a img,
+.archive .post:focus .post-thumbnail a img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+    transform:scale(1.1);
+}
+.popular-posts .post .entry-header,
+.recent-posts .post .entry-header,
+.blog .post .entry-header,
+.archive .post .entry-header{
+    position:absolute;
+    background-color:rgba(0,150,180,.9);
+    color:#fff;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index: 2;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-size:1.4em;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.recent-posts .post .entry-header .entry-title a,
+.recent-posts .post .entry-header .entry-meta a,
+.blog .post .entry-header .entry-title a,
+.blog .post .entry-header .entry-meta a,
+.archive .post .entry-header .entry-title a,
+.archive .post .entry-header .entry-meta a{
+    text-decoration: none;
+    box-shadow: none;
+    color:#fff;
+}
+.recent-posts .post .entry-header .entry-title,
+.blog .post .entry-header .entry-title,
+.archive .post .entry-header .entry-title{
+    padding:0;
+    margin:0;
+}
+.popular-posts .post .entry-header a,
+.recent-posts .post .entry-header .entry-title a,
+.blog .post .entry-header .entry-title a,
+.archive .post .entry-header .entry-title a{
+    color:#fff;
+    width:100%;
+    display:block;
+    padding:10px 20px 20px;
+}
+.recent-posts .post .post-edit-link,
+.blog .post .post-edit-link,
+.archive .post  .post-edit-link{
+    float:right;
+    padding:10px 20px;
+}
+.recent-posts .post .entry-header .entry-meta a,
+.blog .post .entry-header .entry-meta a,
+.archive .post .entry-header .entry-meta a{
+    padding:10px 20px;
+    float: left;
+}
+.recent-posts .post .entry-meta,
+.blog .post .entry-meta,
+.archive .post .entry-meta{
+    display:flex;
+    padding:0;
+}
+.recent-posts .post .entry-content,
+.blog .post .entry-content,
+.archive .post .entry-content{
+	color:#fff;
+	padding:40px 20px;
+
+}
+.twentyseventeen-front-page .panel-content .recent-posts article{
+    margin-bottom:.5em;
+}
+@media screen and (min-width: 48em){
+    .recent-posts .post,
+    .blog .post,
+    .archive .post{
+        width:48%;
+        margin:1%;
+    }
+    .recent-posts .post:first-child,
+    .blog .post:first-child,
+    .archive .post:first-child{
+        width:100%;
+        height:400px;
+    }
+    .recent-posts .post:first-child .post-thumbnail a img{
+        top:-25%;
+         
+    }
+}
+
+
+/*--------------------------------------------------------------
+Lista de competencias
+--------------------------------------------------------------*/
+
+.skills-list{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin:0;
+    padding:0;
+    justify-content: center;
+}
+.skills-list li a{
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.4);
+    box-shadow:none;
+    box-sizing: border-box;
+    padding:8px 5px;
+    position:absolute;
+    bottom:0;
+    color:#fff;
+    transition: background-color .2s ease;
+    text-shadow: 0 1px 5px rgba(0,0,0,.2);
+}
+.skills-list li {
+    position:relative; 
+    display:block;
+    width:139px;
+    height:139px;
+    margin:3px;
+    background-image:url(assets/images/menu-skill-default.jpg);
+    background-size: 100%;
+    background-position: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    transition:transform .2s ease, background-size .6s ease;
+}
+.skills-list li.pessoas {
+    background-image:url(assets/images/menu-skill-pessoas.jpg);
+}
+.skills-list li.compras {
+    background-image:url(assets/images/menu-skill-compras.jpg);
+}
+.skills-list li.vendas{
+    background-image:url(assets/images/menu-skill-vendas.jpg);
+}
+.skills-list li.contabilidade{
+    background-image:url(assets/images/menu-skill-contabilidade.jpg);
+}
+.skills-list li.tesouraria{
+    background-image:url(assets/images/menu-skill-tesouro.jpg);
+}
+.skills-list li:hover a,
+.skills-list li:focus a{
+    background-color:rgba(0,150,180,.6);
+    color:#fff;
+    box-shadow: none;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.skills-list li:hover,
+.skills-list li:focus{
+    transform:scale(1.01);
+    background-size: 120%;
+}
+.skills-list li:active a{
+	transform:scale(.99);
+	
+}
+@media screen and (min-width: 48em){
+
+    .skills-list li {
+        width: 24%;
+        margin:.5%;        
+        height: 180px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 64em){
+	.skills-list li {
+        height: 240px;
+        font-size: 1.8rem;
+	}
+	.skills-list li a{
+        padding:20px 5px 0 15px;
+    }
+	
+}
+/*--------------------------------------------------------------
+Depomentos
+--------------------------------------------------------------*/
+.depoimentos{
+    list-style: none;
+    margin:100px auto 250px;
+    padding:0;
+
+}
+.depoimento{
+    position:relative;
+    background-color:#f2f2f2;
+	padding:80px 10px 20px;
+	margin:0px;
+	background:no-repeat #f2f2f2 url(assets/images/quota-mark.png) right 20px top 20px;
+    background-size:60px;
+    box-sizing:border-box;
+    
+}
+.depoimentos .foto{
+	width:100px;
+	height:100px;
+    overflow:hidden;
+    background-color:#f1f2f3;
+	box-shadow:-4px 4px rgba(0,150,180,.9);
+	position:absolute;
+	top:-60px;
+}
+.depoimentos .foto img{
+    width:140px;
+	filter: grayscale(100%);
+}
+.depoimentos .foto:hover img{
+	filter: grayscale(0%);
+}
+
+.depoimentos .frase{
+	margin-bottom:20px;
+	font-size:1.2em;
+    font-style: italic;
+}
+.depoimentos .nome{
+	font-size:.9em;
+}
+.depoimentos .detalhes{
+	font-size:.7em;
+
+}
+@media screen and (min-width: 48em){
+    .depoimentos{
+        margin:10px auto;
+    }
+	.depoimentos .foto{
+		top:-10px;
+		left:-80px;
+        width:140px;
+	   height:140px;
+	}
+	.depoimento{
+		padding:80px 60px 60px 80px;
+		margin-top:0;
+        margin-left: 100px;
+        margin-right: 40px;
+	}
+
+}
+
+/* MODELO DE BLOCO DE DEPOIMENTO
+<ul class="depoimentos">
+ 	<li class="depoimento">
+<div class="foto"><img src="http://localhost:8888/primavera-skills/wp-content/uploads/2017/08/testemunho-ana.jpg" /></div>
+<div class="frase">Permitiu-me partilhar contactos e experiências, o que tornou a formação muito mais atrativa.</div>
+<div class="nome">Angélica Pinto</div>
+<div class="detalhes">Certificação em Recursos Humanos</div></li>
+
+</ul>
+
+*/
+/*--------------------------------------------------------------
+Perfis Equipa
+--------------------------------------------------------------*/
+.perfil-equipa{
+    position:relative;
+    background-color:#f2f2f2;
+	padding:80px 20px 20px;
+	margin:140px 10px 80px;
+	background-size:60px;
+}
+.perfil-equipa .foto{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	box-shadow:-4px 4px rgba(0,150,180,.9);
+	position:absolute;
+	top:-60px;
+}
+.perfil-equipa .nome{
+    font-size: 1.2em;
+}
+.perfil-equipa .pais{
+    font-size: .8em;
+    margin-bottom:40px;
+}
+.perfil-equipa .foto img{
+	filter: grayscale(100%);
+}
+.perfil-equipa .foto:hover img{
+	filter: grayscale(0%);
+}
+@media screen and (min-width: 48em){
+	.perfil-equipa  .foto{
+		top:-20px;
+		left:-60px;
+	}
+	.perfil-equipa {
+		padding:80px 60px 60px 80px;
+		margin-left:80px;
+		margin-top:80px;
+		box-sizing:border-box;
+	}
+
+}
+
+/*--------------------------------------------------------------
+Icones
+--------------------------------------------------------------*/
+.icones{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    color:transparent;
+    text-indent: -9999px;
+    background-size: 90%;   
+    background-repeat: no-repeat    
+}
+.icones.phone{
+    background-image: url('assets/images/ic_call_black_24dp.png');
+}
+.icones.email{
+    background-image: url('assets/images/ic_mail_outline_black_24dp.png');  
+}
+.icones.mobilephone{
+    background-image: url('assets/images/ic_phonelink_ring_black_24dp.png');      
+}
+
+a.icone-linkedin{
+    background-image:url("assets/images/logo-linkedin.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    width:70px;
+    height:25px;
+    text-indent:-9999px;
+    color:transparent;
+    text-decoratrion:none!important;
+    display:block;
+    box-shadow:none;
+}
+a.icone-linkedin:hover{
+	background-color:transparent;
+	
+}
+/*--------------------------------------------------------------
+Newsletter
+--------------------------------------------------------------*/
+.form-newsletter{
+    max-width: 300px;
+}
+.form-newsletter label{
+    width: 88px;
+    position: absolute;
+    margin: 14px 0 0 10px;
+    color:#888;
+}
+.form-newsletter input[type="text"],.form-newsletter input[type="email"]{
+    width:100%;
+    text-indent:90px;
+}
+.form-newsletter input[type="submit"]{
+    width:100%;
+}
+
+/*--------------------------------------------------------------
+post-ratings plugin
+--------------------------------------------------------------*/
+.rating-block{
+    background-color:#00A5C8;
+    color:#fff;
+    width:100%;
+    height:90px;
+    padding:0;
+    position:relative;
+}
+.rating-block .question{
+    font-size:1em;
+    padding: 16px 10px 10px 20px;
+    width:240px;
+}
+.post-ratings-text{
+    position:absolute;
+    right:30px;
+    bottom:4px;
+}
+.post-ratings{
+    background-color:#008CB4;
+    padding: 6px 20px;
+    font-size: .8em;
+}
+.post-ratings-image{
+    opacity: .5;
+}
+.post-ratings img{
+    position:absolute;
+    right:20px;
+    top:10px;
+    overflow:hidden;
+    width:40px;
+    height:40px;
+    text-indent: -9999px;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(assets/images/thumbs-icon.png) no-repeat;
+    content:url();
+    background-size:40px;
+    padding:20px;
+}
+
+.post-ratings img:nth-child(1){
+    right:60px;
+    transform:rotate(180deg);
+}
+.post-ratings-text{
+    display:block!important;
+}
+@media screen and (min-width: 48em){
+    .rating-block .question{
+        font-size:1.5em;
+        width:300px;
+    }
+    .post-ratings img:nth-child(1){
+        right:80px;
+    }
+}
+
+/*--------------------------------------------------------------
+Yarpp Plugin 
+--------------------------------------------------------------*/
+
+.entry-content .yarpp-related a{
+    text-decoration: none;
+    box-shadow: none;
+}
+.entry-content .yarpp-related a:hover{
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 rgba(0,150,180,1);
+    color:#00A5C8;
+    background-color:transparent;
+}
+.yarpp-related li{
+    padding:4px 0;
+}
+.entry-content .yarpp-related h3, .entry-content .yarpp-related a{
+    font-weight: normal;
+}
+.yarpp-related{
+    background-color: rgba(1,2,3,.08);
+    padding:20px;
+}
+.jp-relatedposts{
+    background-color: #f1f2f3;
+    padding: 0px 10px;
+}
+@media screen and (min-width: 30em){
+    .jp-relatedposts{
+        padding: 0px 40px;
+    }
+}
+.jp-relatedposts a{
+    box-shadow: none;
+}
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover{
+    box-shadow: none!important;
+    text-decoration: none!important;
+}
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post img.jp-relatedposts-post-img{
+    filter:grayscale(1);
+}
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post:hover img.jp-relatedposts-post-img{
+    filter:grayscale(0);
+}
+/*--------------------------------------------------------------
+Meta Slider
+--------------------------------------------------------------*/
+
+.metaslider .flexslider .flex-direction-nav li a.flex-next{
+    background:none;
+    width: 20px;
+    height: 20px;
+    border: transparent 4px solid;
+    border-right: #fff 4px solid;
+    border-bottom: 4px #fff solid;
+    transform: rotate(-45deg);
+    margin-right: 10px;
+}
+.metaslider .flexslider .flex-direction-nav li a.flex-prev{
+    background:none;
+    width: 20px;
+    height: 20px;
+    border: transparent 4px solid;
+    border-left: #fff 4px solid;
+    border-bottom: 4px #fff solid;
+    transform: rotate(45deg);
+    margin-left: 10px;
+}
+
+.bgc-compras{
+    background-color:rgba(110, 70, 150, 0.9);
+}
+.bgc-vendas{
+    background-color:rgba(230, 160, 30, 0.9);
+}
+.bgc-contabil{
+    background-color:rgba(40, 60, 160, 0.9);
+}
+.bgc-tesouro{
+    background-color:rgba(140, 200, 60, 0.9);
+}
+.bgc-pessoas{
+    background-color:rgba(190, 150, 100, 0.9);
+}
+.slider-certificacoes .metaslider{
+    margin:0 auto;
+}
+.slider-certificacoes .metaslider .caption-wrap{
+    background-color:transparent;
+    left:auto;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity: 1;
+    
+}
+.slider-certificacoes .metaslider .caption-wrap .caption{
+    padding:0;
+}
+.slider-certificacoes .slide-cert {
+	padding:20px 40px;
+	height:100%;
+	position:absolute;
+    width:100%;
+    color:#fff;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.big-text{
+	font-size:1.5em;
+	display:block;
+	line-height:1em;
+}
+.small-text, .smal-text{
+	font-size:.5em;    
+}
+.entry-content .flex-direction-nav li a{
+    box-shadow: none;
+    background-color:transparent;
+}
+.entry-content .flex-direction-nav li a:hover{
+    box-shadow: none;
+    background-color:transparent;
+}
+.slider-certificacoes .flex-control-paging{
+    align-items: center;
+}
+.slider-certificacoes .flex-control-paging li a{
+    border-radius:0;
+    background: #fff;
+    height:10px;
+    width: 40px;
+    display:block;
+    border-top:2px solid #bbb;
+    box-shadow:none;
+}
+.slider-certificacoes .flex-control-paging li a:hover{
+    background: #fff;
+    border-top:4px solid #999;
+}
+.slider-certificacoes .flex-control-paging li a.flex-active{
+    border-top:4px solid #00A5C8;
+    background:#00A5C8;
+    height:6px;
+}
+@media screen and (min-width: 48em){
+	.slider-certificacoes .metaslider .caption-wrap{
+    	width:60%;
+	}
+	.slider-certificacoes .slide-cert {
+    	padding:110px 60px 0 0;
+        text-align:right;
+         font-size: 20px; 
+        
+    }
+    .big-text{
+    font-size:2em;
+    }
+}
+@media screen and (min-width: 64em){
+    	.slider-certificacoes .slide-cert {
+        padding:160px 60px 0 0;
+        }
+}
+/*
+Formato de conteÃºdo no slider de certificações
+    <a href="http://pt.primaverabss.com/pt/certificacao-primavera-accounting-and-fiscal/" target=_blank>
+    <div class="slide-cert bgc-contabil">
+    CertificaÃ§Ã£o PRIMAVERA
+    <span class="big-text">Contabilidade</span>
+    </div>
+    </a>
+
+*/
+
+/* Slider depoimentos  */
+.depoimentos .metaslider{
+    margin:0 auto;
+}
+.depoimentos .metaslider .caption-wrap{
+    background:transparent;
+    opacity: 1;
+    color:#000;
+    top:20px;
+    bottom:auto;
+}
+.depoimentos .ms-image > img{
+    visibility: hidden;
+}
+.metaslider .caption-wrap .caption img{
+    max-width: 100%;
+    max-height: 480px;
+    width:100%!important;
+}
+/*--------------------------------------------------------------
+Plugin WPP - for popupar posts
+https://wordpress.org/plugins/wordpress-popular-posts/
+--------------------------------------------------------------*/
+
+.wpp-list{
+width:100%;
+margin:0;
+list-style-type:none;
+display: flex;
+flex-wrap:wrap;
+}
+.wpp-list li{
+    width:100%;
+
+}
+.popular-posts .wpp-list li .post .post-thumbnail{
+    width:auto;
+    height:100%;
+    margin:0;
+
+}
+
+.wpp-no-data{
+    visibility: hidden;
+}
+.popular-posts{
+    margin-top:80px;
+}
+.popular-posts .post{
+    height:200px;
+}
+@media screen and (min-width: 48em){
+.popular-posts .wpp-list li{
+    width:50%;
+    }
+}
+@media screen and (min-width: 64em){
+.popular-posts .wpp-list li{
+    width:25%;
+    height: 240px;
+    font-size: 10pt;
+    }
+}
+
+
+/*--------------------------------------------------------------
+Custom CTAs
+* Foi adicionado um trecho de código à página content.php
+com um condicional que troca o CTA de acordo com a categoria
+--------------------------------------------------------------*/
+
+.cta-category-large .cta{
+    width:100%;
+    min-height:100px;
+    background-color:rgba(10,20,30,.1);
+    margin-bottom:20px;
+    text-align: right;
+    display:block;
+    background-size: cover;
+    background-position: left center;
+}
+.cta-category-large .cta .bloco-texto{
+    width:100%;
+    background-color:rgba(0,150,180,.9);
+    height:100%;
+    text-align: left;
+    padding:20px;
+    color:#fff;
+    font-size: 1.6em;
+    display:inline-block;
+}
+@media screen and (min-width: 30em){    
+    .cta-category-large .cta .bloco-texto{
+        width:66%;
+        padding:10% 5%;
+        
+    }   
+} 
+.cta-category-large .cta .bloco-texto a{
+    color:#fff;
+}    
+
+.cta-category-large .cta.compras-vendas .bloco-texto{
+    background-color:rgba(230, 160, 30, 0.8);
+}
+.cta-category-large .cta.tesouraria .bloco-texto{
+    background-color:rgba(140, 200, 60, 0.8);
+}
+.cta-category-large .cta.compras .bloco-texto{
+    background-color:rgba(110, 70, 150, 0.8);
+}
+.cta-category-large .cta.vendas .bloco-texto{
+    background-color:rgba(230, 160, 30, 0.8);
+}
+.cta-category-large .cta.pessoas .bloco-texto{
+    background-color:rgba(190, 150, 100, 0.8);
+}
+.cta-category-large .cta.contabilidade .bloco-texto{
+    background-color:rgba(40, 60, 160, 0.8);
+}
+
+.cta-category-large .cta.compras-vendas{
+    background-image: url(assets/images/bg-cert-vendas.jpg);
+}
+.cta-category-large .cta.compras{
+    background-image: url(assets/images/bg-cert-compras.jpg);
+}
+.cta-category-large .cta.vendas{
+    background-image: url(assets/images/bg-cert-vendas.jpg);
+}
+.cta-category-large .cta.tesouraria{
+    background-image: url(assets/images/bg-cert-tesouro.jpg);
+}
+.cta-category-large .cta.contabilidade{
+    background-image: url(assets/images/bg-cert-contabilidade.jpg);
+}
+.cta-category-large .cta.pessoas{
+    background-image: url(assets/images/bg-cert-pessoas.jpg);
+}
+
+
+/*------------------------
+        Cta-small
+-------------------------*/
+.cta-category-small{
+    float:right;
+    margin: 0 0 5px 15px;
+}
+.cta-category-small a.cta{
+    transition:all .2s ease;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.cta-category-small a:hover{
+    transform:scale(1.05);
+}
+.cta-category-small a.cta:focus{
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.cta-category-small .cta{
+    float: right;
+    width:160px;
+    height: auto;
+    margin:0 0 3% 3%;
+    text-align: right;
+    display:block;
+    background-size: cover;
+    background-position: left center;
+}
+@media screen and (min-width: 30em){
+    .cta-category-small .cta{
+        width:300px;
+        height: 300px;
+    }        
+}    
+.cta-category-small .cta .bloco-texto{
+    font-family: 'Montserrat', sans-serif;
+    width:100%;
+    background-color:rgba(0,150,180,.9);
+    height:100%;
+    text-align: left;
+    color:#fff;
+    padding: 25% 7%;
+    font-size: 1em;
+    display:inline-block;
+}
+
+.cta-category-small .cta .bloco-texto h1{
+    margin-top: 3.5%;
+    font-family: 'Montserrat', 'Sans-Serif';
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+.cta-category-small .cta.compras-vendas .bloco-texto{
+    background-color:rgba(230, 160, 30, 0.8);
+}
+.cta-category-small a.compras:hover{
+    box-shadow:0 8px 20px rgba(230, 160, 30, 0.4);
+}
+.cta-category-small .cta.tesouraria .bloco-texto{
+    background-color:rgba(140, 200, 60, 0.8);
+}
+.cta-category-small a.tesouraria:hover{
+    box-shadow:0 8px 20px rgba(140, 200, 60, 0.4);
+}
+.cta-category-small .cta.compras .bloco-texto{
+    background-color:rgba(110, 70, 150, 0.8);
+}
+.cta-category-small a.compras:hover{
+    box-shadow:0 8px 20px rgba(110, 70, 150, 0.4);
+}
+.cta-category-small .cta.vendas .bloco-texto{
+    background-color:rgba(230, 160, 30, 0.8);
+}
+.cta-category-small a.vendas:hover{
+    box-shadow:0 8px 20px rgba(230, 160, 30, 0.4);
+}
+.cta-category-small .cta.pessoas .bloco-texto{
+    background-color:rgba(190, 150, 100, 0.8);
+}
+.cta-category-small a.pessoas:hover{
+    box-shadow:0 8px 20px rgba(190, 150, 100, 0.4);
+}
+.cta-category-small .cta.contabilidade .bloco-texto{
+    background-color:rgba(40, 60, 160, 0.8);
+}
+.cta-category-small a.contabilidade:hover{
+    box-shadow:0 8px 20px rgba(40, 60, 160, 0.4);
+}
+.cta-category-small .cta.cert .bloco-texto{
+    background-color:rgba(23, 158, 185, 0.8);
+}
+.cta-category-small a.cert:hover{
+    box-shadow:0 8px 20px rgba(23, 158, 185, 0.4);
+}
+
+.cta-category-small .cta.compras-vendas{
+    background-image: url(assets/images/menu-skill-vendas.jpg);
+}
+.cta-category-small .cta.compras{
+    background-image: url(assets/images/menu-skill-compra.jpg);
+}
+.cta-category-small .cta.vendas{
+    background-image: url(assets/images/menu-skill-vendas.jpg);
+}
+.cta-category-small .cta.tesouraria{
+    background-image: url(assets/images/menu-skill-tesouro.jpg);
+}
+.cta-category-small .cta.contabilidade{
+    background-image: url(assets/images/menu-skill-contabilidade.jpg);
+}
+.cta-category-small .cta.pessoas{
+    background-image: url(assets/images/menu-skill-pessoas.jpg);
+}
+.cta-category-small .cta.cert{
+    background-image: url(assets/images/menu-skill-default.jpg);
+}
