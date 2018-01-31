@@ -297,6 +297,12 @@ footer.site-footer{
     .rocket-career-image{
         background-size:100%;
         padding-bottom:280px;
+        
+    }
+    .certified-image{
+        background-size:100%;
+        padding-bottom:280px;
+        
     }
     .mobile-phone-guy-image{
         padding-bottom:420px; 
@@ -315,6 +321,10 @@ footer.site-footer{
         padding-bottom:380px;
     }   
     .rocket-career-image{
+        background-size:50%;
+        padding-bottom:20px;
+    }
+    .certified-image{
         background-size:50%;
         padding-bottom:20px;
     }
@@ -396,7 +406,9 @@ footer.site-footer{
     }
     .rocket-career-image p{
         max-width:600px;
-
+    }
+     .certified-image p{
+        max-width:600px;
     }
 }
 @media screen and (min-width: 90em){
@@ -426,6 +438,10 @@ footer.site-footer{
 }
 @media screen and (min-width: 100em){
     .rocket-career-image{
+        background-size:auto 140%;
+        background-position:top left;
+    }
+     .certified-image{
         background-size:auto 140%;
         background-position:top left;
     }  
