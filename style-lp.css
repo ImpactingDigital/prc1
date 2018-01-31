@@ -244,6 +244,16 @@ footer.site-footer{
     z-index: 1;
 }
 
+.certification-guy{
+    background-image:url(assets/landingpages/images/3b/guy-competences-bgw.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 280px;
+    position: relative;
+    z-index: 1;
+}
+
 .mobile-phone-guy-image{
     background-image:url(assets/landingpages/images/3a2/mobile-phone-guy-sm.jpg);
     background-size:150%;
@@ -1075,6 +1085,7 @@ display: none;
     color: #fff;
     cursor: pointer;
 }
+
 
 
 .clear-space{
