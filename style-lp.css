@@ -273,6 +273,15 @@ footer.site-footer{
     background-position: bottom center;
     background-repeat: no-repeat;
 }
+
+.eficiencia-image{
+    background-image:url(assets/landingpages/images/3b/eficiencia-sm.jpg);
+    background-size:150%;
+    padding-bottom:300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
 .rapaz-profissional-image{
     background-image:url(assets/landingpages/images/rapaz-profissional-sm.jpg);
     background-size:120%;
@@ -287,6 +296,13 @@ footer.site-footer{
     background-position: bottom center;
     background-repeat: no-repeat;
 }
+.pessoas-felizes2-image{
+    background-image:url(assets/landingpages/images/3b/grupo-de-pessoas-sorrindo2-sm.jpg);
+    background-size:100%;
+    padding-bottom:300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
 .menina-cafe-image{
     background-image:url(assets/landingpages/images/menina-cafe-sm.jpg);
     background-size:100%;
@@ -296,6 +312,17 @@ footer.site-footer{
     text-align: center;
     position:relative;
 }
+
+.menina-sentada-image{
+    background-image:url(assets/landingpages/images/3b/menina-sentada_sm.jpg);
+    background-size:100%;
+    padding-bottom:180px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position:relative;
+}
+
 @media screen and (min-width: 30em){
     .dreaming-boy-img{
         background-size: 150%;
@@ -319,10 +346,19 @@ footer.site-footer{
     .mobile-phone-guy-image{
         padding-bottom:420px; 
         background-size: 100%;      
-    }        
+    }   
+    .eficiencia-image{
+        padding-bottom:420px; 
+        background-size: 100%;      
+    }     
     .menina-cafe-image{
         padding-bottom:300px;
     }
+    
+    .menina-sentada-image{
+        padding-bottom:300px;
+    }
+    
     .rapaz-profissional-image{
         padding-bottom:480px;
     }
@@ -359,15 +395,31 @@ footer.site-footer{
         text-align: left!important;
         
     }
+    .eficiencia-image{
+        background-image:url(assets/landingpages/images/3b/eficiencia-lg.jpg);
+        background-position: bottom right; 
+        padding-bottom:300px;
+        text-align: left!important;
+        
+    }
     .mobile-phone-guy-image p{
         margin:0 0!important;
-    }        
+    }
+    .eficiencia-image p{
+        margin:0 0!important;
+    }  
     .mobile-phone-guy-image h2,
     .mobile-phone-guy-image p,
+    .eficiencia-image h2,
+    .eficiencia-image p,
     .pessoas-felizes-image h2,
     .pessoas-felizes-image p,
+    .pessoas-felizes2-image h2,
+    .pessoas-felizes2-image p,
     .menina-cafe-image p,
     .menina-cafe-image h2,
+    .menina-sentada-image p,
+    .menina-sentada-image h2,
     .rapaz-profissional-image p,
     .rapaz-profissional-image h2 {
         max-width: 500px;
@@ -386,6 +438,12 @@ footer.site-footer{
         background-size:80%;
         padding-bottom:10%;
     }
+     .pessoas-felizes2-image{
+        background-image:url(assets/landingpages/images/3b/grupo-de-pessoas-sorrindo2-lg.jpg);
+        background-position: center; 
+        background-size:100%;
+        padding-bottom:10%;
+    }
     .menina-cafe-image{
         background-image:url(assets/landingpages/images/menina-cafe.jpg);
         background-size:110%;
@@ -395,12 +453,49 @@ footer.site-footer{
         text-align: right;
         background-attachment: scroll;
     }
+    
+    .menina-sentada-image{
+        background-image:url(assets/landingpages/images/3b/menina-sentada_lg.jpg);
+        background-size:110%;
+        padding-bottom:0%;        
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        text-align: right;
+        background-attachment: scroll;
+    }
+    
     .menina-cafe-image p {
         margin-left:auto;
     }
+    
+     .menina-cafe-image p {
+        margin-left:auto;
+    }
+    
     .menina-cafe-image h2 {
         margin-left:auto;
     }
+    
+    .menina-cafe-image h2 {
+        margin-left:auto;
+    }
+    
+    .menina-sentada-image p {
+        margin-left:auto;
+    }
+    
+     .menina-sentada-image p {
+        margin-left:auto;
+    }
+    
+    .menina-sentada-image h2 {
+        margin-left:auto;
+    }
+    
+    .menina-sentada-image h2 {
+        margin-left:auto;
+    }
+    
     .thinking-euro{
         background-image:url(assets/landingpages/images/thinking-euro.png);
     width:240px;
@@ -441,9 +536,17 @@ footer.site-footer{
     .mobile-phone-guy-image{
         background-size: 80%;
     }
+    .eficiencia-image{
+        background-size: 80%;
+    }
     .menina-cafe-image{
         background-size:1400px;
     }
+    
+    .menina-sentada-image{
+        background-size:1400px;
+    }
+    
     .dreaming-boy-img{
         background-size: auto 100%;
     }
@@ -469,8 +572,8 @@ footer.site-footer{
     }
     }  
     .blue-certified{
-        width:500px;
-        height:600px;
+        width:400px;
+        height:500px;
     }
 }
 .depoimentos-block .video{
@@ -599,6 +702,10 @@ ul.logo-list li img{
 text-align: center;
 margin-top:-40px;
 margin-bottom:-40px;
+}
+.cta-normal-section{
+text-align: center;
+    margin-top:40px;
 }
 .cta-middle-section .button{
     margin: 0 auto;
