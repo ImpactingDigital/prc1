@@ -1139,7 +1139,7 @@ text-align: center;
         right:15%;
         z-index: 10;
         width:400px;
-        margin-top:40px
+        margin-top:40px;
     }
     
 }
@@ -1167,11 +1167,16 @@ display: none;
 .yellow-box{
     background-color:rgba(250, 170, 45, 0.8);
     box-shadow:0 4px 20px rgba(230, 150, 35, 0.6);
-    position:relative center;
-    margin: auto;
-    padding: 10px 10px 10px 10px;
+    position:center;
+    margin: 5% auto;
+    top: 0;
+    bottom: 0;
+    padding: 20px 20px 20px 20px;
+    max-width:300px;
+    max-height:320px;
     z-index: 0;
     border:0;
+    
 }
 /*------------------------
         ERROR PAGE - STYLE
