@@ -14,10 +14,21 @@
         <form data-smk-form action="https://primaveracademy.smark.io/api.php/directlead/f05d5c7b131eb6d8d9f69005b6ba7422539d78c3" method="post">
             <input type="hidden" name="redirect_ok" value="https://skills.primaveraacademy.com/obrigado/">
             <input type="hidden" name="redirect_error" value="https://prc1.impactinglabs.com/formularios/prc13a2f1/error.html">
-            <input type="hidden" name="flag[smk_update_different_campaign]" value="1"> <!-- Parâmetro utilizada para integrar os leads de diferentes camapnhas no mesmo registro -->
+            <input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+            <!-- Parâmetro utilizada para integrar os leads de diferentes campanhas no mesmo registro -->
             <input type="hidden" name="extra[profile]" value="A2">
             <input placeholder="Nome" type="text" name="extra[full_name]" required>
             <input placeholder="Email" type="email" name="lead[email]" required>
+            
+             <select class="custom-select" name="extra[area]">
+                <option label="area1" value="area1">Área1</option>
+                <option label="area1" value="area1">Área1</option>
+                 <option label="area1" value="area1">Área1</option>
+                 <option label="area1" value="area1">Área1</option>
+                 <option label="area1" value="area1">Área1</option>
+                <option label="Outra" value="outra_cidade">Outra Área</option>
+            </select><br>
+            
             <select class="custom-select" name="extra[job_city]">
                 <option label="Lisboa" value="lisboa">Lisboa</option>
                 <option label="Porto" value="porto">Porto</option>
