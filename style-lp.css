@@ -1222,6 +1222,10 @@ display: none;
     padding-left: 10px;
     font-family: 'Montserrat', 'sans-serif';
 }
+.yellow-form input::placeholder{
+    font-family: 'Montserrat','sans-serif';
+    color: #999;
+}
 .yellow-form select.custom-select{
     background-color:#fff;
     background-image: url("../img/arrow-down.png");
