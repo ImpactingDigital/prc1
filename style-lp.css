@@ -1220,10 +1220,7 @@ display: none;
     border: none;
     border-radius: inherit;
     padding-left: 10px;
-}
-.yellow-form input[type=text]::placeholder{
-    font-family: 'Montserrat','sans-serif';
-    color: #ABAAA6;
+    font-family: 'Montserrat', 'sans-serif';
 }
 .yellow-form select.custom-select{
     background-color:#fff;
