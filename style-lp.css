@@ -195,9 +195,9 @@ footer.site-footer{
     box-shadow: none;
     background-color:transparent;
 }
-.entry-content h2{
+.page-template-clean-landing-page .entry-content h2{
     font-size: 1.8em;
-    font-weight: 300;
+    font-weight:normal;
 }
 
 /****************************** 
