@@ -93,7 +93,9 @@ footer.site-footer{
     text-align: center;
     overflow:hidden;
 }
-
+.first-block .container{
+    padding:0;
+}
 .full-block, a.full-block{
     display:block;
     width:100%;
