@@ -1,6 +1,7 @@
 /* --------------------------------------------
 Specific stille for the PRIMAVERA Landing Pages
 -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /* General */
 h1,h2,h3{
@@ -194,7 +195,10 @@ footer.site-footer{
     box-shadow: none;
     background-color:transparent;
 }
-
+.entry-content h2{
+    font-size: 1.8em;
+    font-weight: 300;
+}
 
 /****************************** 
         Sections Images 
