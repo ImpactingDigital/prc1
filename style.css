@@ -13,6 +13,7 @@ Text Domain: skills-twenty-seventeen-child
 */
 
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html, body, button, input, select, textarea{
     font-family: 'Montserrat', sans-serif;
@@ -37,7 +38,6 @@ h2 + h3{
 /*--------------------------------------------------------------
 5.0 Typography
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .text-center{
     text-align: center;
