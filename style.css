@@ -12,6 +12,8 @@ Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-
 Text Domain: skills-twenty-seventeen-child
 */
 
+
+
 html, body, button, input, select, textarea{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -31,9 +33,12 @@ h2 + h3{
     .hide-mobile{display:none!important;}
 }
 
+
 /*--------------------------------------------------------------
 5.0 Typography
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 .text-center{
     text-align: center;
 }
